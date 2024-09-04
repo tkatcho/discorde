@@ -3,7 +3,7 @@ const path = require("path");
 const { format } = require("url");
 
 function createWindow() {
-  const startURL = format({
+  const startURL = url.format({
     pathname: path.join(__dirname, "./discorde/build/index.html"),
     protocol: "file:",
     slashes: true,
